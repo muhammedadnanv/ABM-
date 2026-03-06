@@ -1,0 +1,554 @@
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABM Digital Group | E-commerce Infrastructure &amp; Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-slide { opacity: 0; transition: opacity 1s ease-in-out; position: absolute; inset: 0; }
+        .hero-slide.active { opacity: 1; }
+        .glass-card { backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.8); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .modal-overlay { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(4px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden selection:bg-blue-100 selection:text-blue-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-semibold tracking-tighter text-blue-700">ABM</span>
+                <span class="text-xs font-medium tracking-widest text-slate-400 border-l border-slate-200 pl-2 uppercase">Digital Group</span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#services" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Our Services</a>
+                <a href="#pricing" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Pricing</a>
+                <a href="#security" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Trust &amp; Security</a>
+                <a href="#contact" class="px-5 py-2.5 bg-blue-600 text-white rounded-full text-sm font-medium hover:bg-blue-700 transition-all shadow-lg shadow-blue-200">Start Scaling</a>
+            </div>
+
+            <button class="md:hidden text-2xl text-slate-900" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <iconify-icon icon="solar:hamburger-menu-linear" stroke="1.5"></iconify-icon>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-6 py-8 flex flex-col gap-6 absolute w-full shadow-xl">
+            <a href="#services" class="text-lg font-medium text-slate-800">Our Services</a>
+            <a href="#pricing" class="text-lg font-medium text-slate-800">Pricing</a>
+            <a href="#security" class="text-lg font-medium text-slate-800">Security</a>
+            <a href="#contact" class="text-lg font-medium text-blue-600">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-[85vh] min-h-[600px] flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="hero-slide active bg-cover bg-center" style="background-image: linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.7)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;q=80')"></div>
+            <div class="hero-slide bg-cover bg-center" style="background-image: linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.7)), url('https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&amp;fit=crop&amp;q=80')"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/20 text-blue-50 text-xs font-medium tracking-wide mb-6 backdrop-blur-sm border border-white/20">
+                    <iconify-icon icon="solar:globus-linear"></iconify-icon>
+                    BUILDING &amp; MANAGING GLOBAL COMMERCE INFRASTRUCTURE
+                </div>
+                <h1 class="text-4xl md:text-6xl font-semibold text-white tracking-tight leading-[1.1] mb-6">
+                    Reliable Infrastructure for <br><span class="text-blue-400">Scaling E-commerce.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-slate-100 font-light leading-relaxed mb-10 max-w-2xl">
+                    ABM Digital Group helps brands build, manage, and scale successful e-commerce operations through professional Wix development and multi-marketplace management.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#services" class="px-8 py-4 bg-white text-blue-900 rounded-full font-medium hover:bg-slate-100 transition-all flex items-center justify-center gap-2 group">
+                        Explore Services
+                        <iconify-icon icon="solar:round-alt-arrow-right-linear" class="group-hover:translate-x-1 transition-transform"></iconify-icon>
+                    </a>
+                    <a href="#contact" class="px-8 py-4 bg-transparent border border-white/30 text-white rounded-full font-medium hover:bg-white/10 backdrop-blur-sm transition-all text-center">
+                        Request a Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <span class="text-blue-600 font-medium text-xs tracking-widest uppercase">Expertise</span>
+                <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900 mt-4">Our Services</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Wix Development -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-blue-600 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:code-square-linear"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 tracking-tight">E-commerce Store Development (Wix)</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">High-performance stores with catalog creation, payment integration, and conversion-focused design optimized for mobile.</p>
+                </div>
+
+                <!-- Management -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-blue-600 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:settings-linear"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 tracking-tight">E-commerce Management</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Daily operations management including inventory monitoring, order coordination, and performance tracking to keep your store running smoothly.</p>
+                </div>
+
+                <!-- Marketplace -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-blue-600 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:shop-2-linear"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 tracking-tight">Marketplace Setup &amp; Management</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Strategic expansion into Amazon, Flipkart, and Meesho with optimized product listings and presentation improvements.</p>
+                </div>
+
+                <!-- Infrastructure -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-blue-600 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:database-linear"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 tracking-tight">Infrastructure &amp; Optimization</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Improving store structure, workflow speed, and scalable technical foundations to support your brand's rapid growth.</p>
+                </div>
+
+                <!-- White Label -->
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-blue-200 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-white shadow-sm flex items-center justify-center text-blue-600 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <iconify-icon icon="solar:users-group-two-rounded-linear"></iconify-icon>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 tracking-tight">White Label E-commerce Operations</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Backend development and management for agencies. We handle the technical delivery while you maintain the client relationship.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="payment-providers-section">
+        <div class="payment-providers-container">
+            <p class="payment-label">Trusted Payment Gateway Providers</p>
+            <h2 class="payment-heading">Secure payments powered by leading gateway partners</h2>
+    
+            <div class="payment-slider">
+                <div class="payment-track">
+                    <!-- Set 1 -->
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/razorpay.svg" alt="Razorpay">
+                        <span>Razorpay</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/stripe.svg" alt="Stripe">
+                        <span>Stripe</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/paypal.svg" alt="PayPal">
+                        <span>PayPal</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/paytm.svg" alt="Paytm">
+                        <span>Paytm</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/phonepe.svg" alt="PhonePe">
+                        <span>PhonePe</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlepay.svg" alt="Google Pay">
+                        <span>Google Pay</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/applepay.svg" alt="Apple Pay">
+                        <span>Apple Pay</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/mastercard.svg" alt="Mastercard">
+                        <span>Mastercard</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/visa.svg" alt="Visa">
+                        <span>Visa</span>
+                    </div>
+    
+                    <!-- Set 2 (duplicate for seamless infinite scroll) -->
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/razorpay.svg" alt="Razorpay">
+                        <span>Razorpay</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/stripe.svg" alt="Stripe">
+                        <span>Stripe</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/paypal.svg" alt="PayPal">
+                        <span>PayPal</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/paytm.svg" alt="Paytm">
+                        <span>Paytm</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/phonepe.svg" alt="PhonePe">
+                        <span>PhonePe</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlepay.svg" alt="Google Pay">
+                        <span>Google Pay</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/applepay.svg" alt="Apple Pay">
+                        <span>Apple Pay</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/mastercard.svg" alt="Mastercard">
+                        <span>Mastercard</span>
+                    </div>
+    
+                    <div class="payment-item">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/visa.svg" alt="Visa">
+                        <span>Visa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .payment-providers-section {
+            background: #0b0b0f;
+            padding: 80px 20px;
+            overflow: hidden;
+        }
+    
+        .payment-providers-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    
+        .payment-label {
+            color: #a1a1aa;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+    
+        .payment-heading {
+            color: #ffffff;
+            font-size: clamp(28px, 4vw, 46px);
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 42px;
+            letter-spacing: -0.03em;
+        }
+    
+        .payment-slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+        }
+    
+        .payment-track {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: max-content;
+            animation: paymentScroll 28s linear infinite;
+        }
+    
+        .payment-item {
+            min-width: 220px;
+            height: 92px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            padding: 0 24px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+        }
+    
+        .payment-item:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 255, 255, 0.18);
+            background: rgba(255, 255, 255, 0.07);
+        }
+    
+        .payment-item img {
+            width: 28px;
+            height: 28px;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+            opacity: 0.92;
+        }
+    
+        .payment-item span {
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            white-space: nowrap;
+        }
+    
+        @keyframes paymentScroll {
+            from {
+                transform: translateX(0);
+            }
+    
+            to {
+                transform: translateX(-50%);
+            }
+        }
+    
+        @media (max-width: 768px) {
+            .payment-providers-section {
+                padding: 60px 16px;
+            }
+    
+            .payment-item {
+                min-width: 180px;
+                height: 82px;
+                border-radius: 16px;
+                padding: 0 18px;
+            }
+    
+            .payment-item img {
+                width: 24px;
+                height: 24px;
+            }
+    
+            .payment-item span {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <span class="text-blue-600 font-medium text-xs tracking-widest uppercase">Service Plans</span>
+            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900 mt-4">Transparent Pricing</h2>
+            <p id="location-status" class="text-sm text-slate-500 mt-4 font-light italic">Estimating based on regional market standards...</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <!-- Setup Plan -->
+            <div class="bg-white p-10 rounded-3xl border border-slate-200 shadow-sm flex flex-col">
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold text-slate-900">Store Setup</h3>
+                    <p class="text-slate-500 text-sm mt-2 font-light">Wix Development &amp; Launch.</p>
+                </div>
+                <div class="mb-8">
+                    <span id="starter-price-sym" class="text-4xl font-semibold tracking-tight text-slate-900">$</span>
+                    <span id="starter-price" class="text-4xl font-semibold tracking-tight text-slate-900">799</span>
+                    <span class="text-slate-400 text-sm">/project</span>
+                </div>
+                <button onclick="toggleModal('starter')" class="text-blue-600 text-xs font-semibold tracking-widest uppercase mb-8 flex items-center gap-2 hover:gap-3 transition-all">
+                    View Scope <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                </button>
+                <a href="#contact" class="w-full py-3 rounded-full border border-slate-200 text-slate-900 font-medium hover:bg-slate-50 transition-colors text-center mt-auto">Get Started</a>
+            </div>
+
+            <!-- Management Plan -->
+            <div class="bg-blue-600 p-10 rounded-3xl shadow-2xl text-white relative flex flex-col scale-105 z-10">
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold">Growth Management</h3>
+                    <p class="text-blue-100 text-sm mt-2 font-light">Daily Management &amp; Marketplace.</p>
+                </div>
+                <div class="mb-8">
+                    <span id="growth-price-sym" class="text-4xl font-semibold tracking-tight">$</span>
+                    <span id="growth-price" class="text-4xl font-semibold tracking-tight">1,199</span>
+                    <span class="text-blue-200 text-sm">/mo</span>
+                </div>
+                <button onclick="toggleModal('growth')" class="text-white/80 text-xs font-semibold tracking-widest uppercase mb-8 flex items-center gap-2 hover:gap-3 transition-all">
+                    View Details <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                </button>
+                <a href="#contact" class="w-full py-3 rounded-full bg-white text-blue-600 font-medium hover:bg-blue-50 transition-colors text-center mt-auto">Select Plan</a>
+            </div>
+
+            <!-- Custom Plan -->
+            <div class="bg-white p-10 rounded-3xl border border-slate-200 shadow-sm flex flex-col">
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold text-slate-900">Enterprise</h3>
+                    <p class="text-slate-500 text-sm mt-2 font-light">White Label &amp; Infra scaling.</p>
+                </div>
+                <div class="mb-8 h-10 flex items-center">
+                    <span class="text-3xl font-semibold tracking-tight text-slate-900">Custom Quote</span>
+                </div>
+                <button onclick="toggleModal('enterprise')" class="text-blue-600 text-xs font-semibold tracking-widest uppercase mb-8 flex items-center gap-2 hover:gap-3 transition-all">
+                    View Options <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+                </button>
+                <a href="#contact" class="w-full py-3 rounded-full border border-slate-200 text-slate-900 font-medium hover:bg-slate-50 transition-colors text-center mt-auto">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms & Security Sections -->
+    <section id="security" class="py-24 bg-white border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="p-10 rounded-[2.5rem] bg-slate-900 text-white relative overflow-hidden">
+                    <iconify-icon icon="solar:shield-keyhole-linear" class="text-6xl text-blue-500 mb-6"></iconify-icon>
+                    <h3 class="text-2xl font-semibold tracking-tight mb-4">Infrastructure Security</h3>
+                    <p class="text-slate-400 font-light mb-8 leading-relaxed">We maintain enterprise-grade security for your storefront. From SSL implementation to secure payment gateway protocols, your customer data and financial transactions are protected.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><iconify-icon icon="solar:check-circle-linear" class="text-blue-400"></iconify-icon> Secure Payment Integrations</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><iconify-icon icon="solar:check-circle-linear" class="text-blue-400"></iconify-icon> Marketplace Credential Privacy</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-300"><iconify-icon icon="solar:check-circle-linear" class="text-blue-400"></iconify-icon> Regular Security Audits</li>
+                    </ul>
+                </div>
+                <div class="p-10 rounded-[2.5rem] bg-blue-50 border border-blue-100">
+                    <iconify-icon icon="solar:document-text-linear" class="text-6xl text-blue-600 mb-6"></iconify-icon>
+                    <h3 class="text-2xl font-semibold tracking-tight text-slate-900 mb-4">Transparent Operations</h3>
+                    <p class="text-slate-600 font-light mb-8 leading-relaxed">Clear reporting and reliable operations. We focus on being the backend engine that powers your brand while maintaining full visibility into your store's health.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><iconify-icon icon="solar:check-circle-linear" class="text-blue-600"></iconify-icon> Monthly Performance Reviews</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><iconify-icon icon="solar:check-circle-linear" class="text-blue-600"></iconify-icon> White-Label Agreement Clarity</li>
+                        <li class="flex items-center gap-3 text-sm text-slate-600"><iconify-icon icon="solar:check-circle-linear" class="text-blue-600"></iconify-icon> Zero Hidden Costs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-semibold tracking-tight text-slate-900 mb-8">Ready to Optimize Your Store?</h2>
+            <p class="text-slate-500 font-light mb-12 max-w-xl mx-auto">Contact our Kochi operations hub to discuss your Wix development or marketplace management needs.</p>
+            
+            <div class="flex flex-col items-center gap-6">
+                <a href="tel:+919656778508" class="group flex items-center gap-4 bg-slate-50 p-6 rounded-3xl border border-slate-100 hover:border-blue-200 transition-all">
+                    <div class="w-16 h-16 rounded-2xl bg-blue-600 flex items-center justify-center text-white text-2xl group-hover:scale-110 transition-transform">
+                        <iconify-icon icon="solar:phone-linear"></iconify-icon>
+                    </div>
+                    <div class="text-left">
+                        <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest">Business Inquiries</p>
+                        <p class="text-2xl font-semibold text-slate-900 tracking-tight">+91 96567 78508</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="price-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center p-6 modal-overlay">
+        <div class="bg-white w-full max-w-lg rounded-[2rem] p-10 shadow-2xl relative">
+            <button onclick="toggleModal()" class="absolute top-6 right-6 text-2xl text-slate-400 hover:text-slate-900 transition-colors">
+                <iconify-icon icon="solar:close-circle-linear"></iconify-icon>
+            </button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 pt-20 pb-10 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex items-center justify-center gap-2 mb-6">
+                <span class="text-2xl font-semibold tracking-tighter text-blue-700">ABM</span>
+                <span class="text-xs font-medium tracking-widest text-slate-400 border-l border-slate-200 pl-2 uppercase">Digital Group</span>
+            </div>
+            <p class="text-slate-500 text-xs mb-8">© 2024 ABM Digital Group. Building India's digital commerce infrastructure.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hero Slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 5000);
+
+        // Pricing Logic - Updated Market Rates
+        const rates = {
+            'IN': { sym: '₹', starter: '45,000', growth: '65,000', label: 'India Rates' },
+            'US': { sym: '$', starter: '799', growth: '1,199', label: 'International (USD)' },
+            'default': { sym: '$', starter: '799', growth: '1,199', label: 'Global' }
+        };
+
+        async function detectLocation() {
+            try {
+                const response = await fetch('https://ipapi.co/json/');
+                const data = await response.json();
+                const config = rates[data.country_code] || rates['default'];
+                document.getElementById('starter-price').innerText = config.starter;
+                document.getElementById('growth-price').innerText = config.growth;
+                document.getElementById('starter-price-sym').innerText = config.sym;
+                document.getElementById('growth-price-sym').innerText = config.sym;
+                document.getElementById('location-status').innerText = `Current Market: ${config.label}`;
+            } catch (e) {
+                console.log("Location detection failed");
+            }
+        }
+        detectLocation();
+
+        const modalContent = {
+            'starter': `
+                <h4 class="text-xl font-semibold mb-4">Store Setup Scope</h4>
+                <p class="text-slate-500 text-sm mb-6 leading-relaxed">Full Wix store setup from scratch.</p>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3 text-sm font-medium"><iconify-icon icon="solar:check-circle-linear" class="text-blue-600"></iconify-icon> Wix Platform Development</div>
+                    <div class="flex items-center gap-3 text-sm font-medium"><iconify-icon icon="solar:check-circle-linear" class="text-blue-600"></iconify-icon> Payment & Shipping Setup</div>
+                    <div class="flex items-center gap-3 text-sm font-medium"><iconify-icon icon="solar:check-circle-linear" class="text-blue-600"></iconify-icon> Initial Catalog Creation (Up to 50 items)</div>
+                </div>`,
+            'growth': `
+                <h4 class="text-xl font-semibold mb-4">Growth Management Scope</h4>
+                <p class="text-slate-500 text-sm mb-6 leading-relaxed">Retainer-based monthly operations management.</p>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3 text-sm font-medium"><iconify-icon icon="solar:check-circle-linear" class="text-blue-600"></iconify-icon> Amazon, Flipkart, Meesho Management</div>
+                    <div class="flex items-center gap-3 text-sm font-medium"><iconify-icon icon="solar:check-circle-linear" class="text-blue-600"></iconify-icon> Inventory & Order Coordination</div>
+                    <div class="flex items-center gap-3 text-sm font-medium"><iconify-icon icon="solar:check-circle-linear" class="text-blue-600"></iconify-icon> Monthly Performance Reporting</div>
+                </div>`,
+            'enterprise': `
+                <h4 class="text-xl font-semibold mb-4">Enterprise & White Label</h4>
+                <p class="text-slate-500 text-sm mb-6 leading-relaxed">Dedicated infrastructure for agencies and large brands.</p>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3 text-sm font-medium"><iconify-icon icon="solar:check-circle-linear" class="text-blue-600"></iconify-icon> Full White-Label Backend Support</div>
+                    <div class="flex items-center gap-3 text-sm font-medium"><iconify-icon icon="solar:check-circle-linear" class="text-blue-600"></iconify-icon> Scalable Infrastructure Optimization</div>
+                    <div class="flex items-center gap-3 text-sm font-medium"><iconify-icon icon="solar:check-circle-linear" class="text-blue-600"></iconify-icon> Dedicated Operations Team</div>
+                </div>`
+        };
+
+        function toggleModal(type) {
+            const modal = document.getElementById('price-modal');
+            const content = document.getElementById('modal-content');
+            if (type) {
+                content.innerHTML = modalContent[type];
+                modal.classList.remove('hidden');
+            } else {
+                modal.classList.add('hidden');
+            }
+        }
+    </script>
+
+</body></html>
